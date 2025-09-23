@@ -1,5 +1,5 @@
-# Sokoban-Game (Java)
-Co-developed a one-player Sokoban-style puzzle game in Java.
+# Sokoban-Game (Java) | Co-developed
+One-player Sokoban-style puzzle game built in Java, focused on strategic movement, collision detection, and modular game design.
 
 Features:
 
