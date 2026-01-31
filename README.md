@@ -1,46 +1,75 @@
-# Sokoban-Game (Java) | Co-developed
-One-player Sokoban-style puzzle game built in Java, focused on strategic movement, collision detection, and modular game design.
+# Sokoban Puzzle Game
 
-Features:
+A single-player puzzle game implementation of the classic Sokoban in Java, featuring strategic gameplay mechanics and object-oriented design patterns.
 
-- Implemented keyboard controls (arrow keys) for player movement: up, down, left, right. No diagonal movement.
+## Game Overview
 
-- Collision detection ensures players cannot walk into walls.
+Sokoban is a classic puzzle game where players navigate grid-based levels, pushing objects to solve increasingly complex challenges. This implementation emphasizes clean code architecture, robust collision detection, and modular game logic.
 
-- Crates and trophies can only be pushed up, down, or left/right; once they fall into holes, they are permanently lost.
+## Features
 
-- Strategic movement mechanics to solve puzzles efficiently.
+### Core Gameplay
+- **Directional Movement**: Navigate using arrow keys (up, down, left, right)
+- **Collision System**: Robust detection prevents movement through walls and invalid positions
+- **Object Mechanics**: Push crates and trophies in cardinal directions (no diagonal movement)
+- **Permanent Consequences**: Objects that fall into holes are irretrievably lost
+- **Strategic Puzzle Solving**: Each move matters—plan carefully with no undo functionality
 
-- Structured game logic using visitor patterns, utility classes, and function objects for modularity.
+### Technical Implementation
+- **Design Patterns**: Visitor pattern for clean game logic separation
+- **Modular Architecture**: Utility classes and function objects for maintainability
+- **Keyboard Controls**: Responsive input handling for smooth gameplay
+
+## How to Play
+
+1. **Movement**: Use arrow keys to move your character in four directions (↑ ↓ ← →)
+2. **Push Objects**: Move crates and trophies by walking into them
+3. **Avoid Holes**: Any object or player that falls into a hole is permanently removed
+4. **Solve Puzzles**: Complete each level by strategically positioning objects
+5. **Plan Ahead**: No undo feature—every move counts!
+
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/af60b686-a3c9-43ee-a4ad-e17795035367" alt="Gameplay Screenshot 1" width="800"/>
+  <br>
+  <em>Level overview showing player, crates, and obstacles</em>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7def52cc-01d3-4c6c-b071-4f188dd9455b" alt="Gameplay Screenshot 2" width="800"/>
+  <br>
+  <em>Mid-puzzle gameplay demonstration</em>
+</p>
+
+## Technologies
+
+- **Language**: Java
+- **IDE**: Eclipse
+- **Graphics Library**: impworld
+- **Paradigm**: Object-Oriented Programming
+
+## Architecture Highlights
+
+- Visitor pattern for game state management
+- Modular component design for extensibility
+- Separation of concerns between game logic and rendering
+- Efficient collision detection algorithms
+
+## Game Rules
+
+- ✅ Move in four cardinal directions only
+- ✅ Push objects one at a time
+- ❌ No diagonal movement
+- ❌ Cannot pull objects
+- ❌ No undo/redo functionality
+- ❌ Objects in holes cannot be retrieved
 
 
+## Development
 
-How to Play:
-
-- Use arrow keys to move the player in the four cardinal directions.
-
-- Avoid falling into holes; any object (including the player) that falls into a hole is permanently lost.
-
-- Move crates and trophies to solve puzzles — they cannot be moved diagonally.
-
-- No undo/redo option available; each move is final.
-
-- Designed as a single-player game.
-
-Screenshots:
-
-<img width="2389" height="2020" alt="Screenshot 2025-09-22 200804" src="https://github.com/user-attachments/assets/af60b686-a3c9-43ee-a4ad-e17795035367" />
-
-<img width="2399" height="2024" alt="Screenshot 2025-09-22 200856" src="https://github.com/user-attachments/assets/7def52cc-01d3-4c6c-b071-4f188dd9455b" />
-
-Technologies
-
-- Language: Java
-
-- IDE: Eclipse
-
-- Library: impworld
-
-Code:
-
-Code is available by request only.
+This project was co-developed as a collaborative effort, focusing on:
+- Clean code practices
+- Design pattern implementation
+- Game mechanics and user experience
+- Modular software architecture
